@@ -14,12 +14,12 @@
 namespace vendor;
 
 abstract class Db {
-    
+
     public $PDO;
-    
+
     public function __construct() {
-         
-         $this->PDO = new \PDO('mysql:host=localhost; dbname=plant; charset=utf8', 'root', '');
-         
-     }    
+        $db = require_once ROOT.'/config/db.php'
+         $this->PDO = new \PDO( $db['dsn'], $db['user'], $db['password']);
+
+     }
 }
