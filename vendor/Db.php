@@ -18,7 +18,7 @@ abstract class Db {
     public $PDO;
 
     public function __construct() {
-        $db = require_once ROOT.'/config/db.php'
+        $db = include ROOT.'/config/db.php';
          $this->PDO = new \PDO( $db['dsn'], $db['user'], $db['password']);
 
      }
