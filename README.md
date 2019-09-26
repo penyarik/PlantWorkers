@@ -1,6 +1,6 @@
 # PlantWorkers
 
-Имя базы данных: plant;
+Database name: plant;
 Description:
 We have a plant. This plant divided on 3 departments.
 Each department has 10 workers.
